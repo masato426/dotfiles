@@ -1,0 +1,6 @@
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
+eval "$(nodenv init -)"
+eval "$(pyenv init -)"
