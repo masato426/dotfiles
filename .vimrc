@@ -7,14 +7,17 @@ call plug#begin('~/.vim/plugged')
 Plug 'tomtom/tcomment_vim'
 " Ruby向けにendを自動挿入してくれる
 Plug 'tpope/vim-endwise'
+" ファイル移動、Railsコマンド実行
+Plug 'tpope/vim-rails'
 " ファイルをtree表示してくれる
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 " インデントに色をつけて見やすくする
 Plug 'nathanaelkane/vim-indent-guides'
 " Vimを立ち上げ時に、自動的にvim-indent-guidesをオンにする
 let g:indent_guides_enable_on_vim_startup = 1
 " colorschemeのダウンロード
-Plug 'karoliskoncevicius/moonshine-vim', {'do': 'cp colors/* ~/.vim/colors/'}
+" ヘルプを日本語化する
+Plug 'vim-jp/vimdoc-ja'
 
 call plug#end()
 
@@ -50,12 +53,10 @@ set wrap
 "Vimが挿入するインデントの幅
 set shiftwidth=2
 " 行頭の余白内で Tab を打ち込むと、'shiftwidth'の数だけインデントする
-set smarttab
-"set clipboard=unnamedplus
+"set smarttab
 " エディタ画面の色調整を最適化する
 set background=dark
 " カラースキーマ設定
-" colorscheme moonshine
 colorscheme alduin
 " 行番号の色
 highlight LineNr ctermfg=darkyellow
